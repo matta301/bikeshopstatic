@@ -7,8 +7,9 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
  	<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-green.min.css" /> 
 	<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.red-blue.min.css" />
-
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body class="<?php echo $pageClass; ?>-page">
@@ -17,16 +18,18 @@
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 		<header class="mdl-layout__header">
 	    	<div class="mdl-layout__header-row">
-		      	<!-- Title -->
-		      	<span class="mdl-layout-title">Title</span>
+		    	<a href="index.php">
+	      			<img class="logo" src="images/logo.png" alt="bicycle shop comparison logo" />
+	      		</a>
+
 		      	<!-- Add spacer, to align navigation to the right -->
 		      	<div class="mdl-layout-spacer"></div>
 		      	<!-- Navigation. We hide it in small screens. -->
 		      	<nav class="mdl-navigation mdl-layout--large-screen-only">
-			        <a class="mdl-navigation__link" href="">Link</a>
-			        <a class="mdl-navigation__link" href="">Link</a>
-			        <a class="mdl-navigation__link" href="">Link</a>
-			        <a class="mdl-navigation__link" href="">Link</a>
+			        <a class="mdl-navigation__link" href="index.php">Home</a>
+			        <a class="mdl-navigation__link" href="">Shops</a>
+			        <a class="mdl-navigation__link" href="">About</a>
+			        <a class="mdl-navigation__link" href="">Contact</a>
 		      	</nav>
 		    </div>
 	  	</header>
@@ -34,10 +37,10 @@
 		<div class="mdl-layout__drawer mdl-layout--small-screen-only">
 			<span class="mdl-layout-title">Title</span>
 			<nav class="mdl-navigation">
-			  <a class="mdl-navigation__link" href="">Link</a>
-			  <a class="mdl-navigation__link" href="">Link</a>
-			  <a class="mdl-navigation__link" href="">Link</a>
-			  <a class="mdl-navigation__link" href="">Link</a>
+				<a class="mdl-navigation__link" href="index.php">Home</a>
+				<a class="mdl-navigation__link" href="">Shops</a>
+				<a class="mdl-navigation__link" href="">About</a>
+				<a class="mdl-navigation__link" href="">Contact</a>
 			</nav>
 		</div>
 		
