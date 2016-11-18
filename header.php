@@ -1,3 +1,11 @@
+<?php 
+
+	
+	require_once("functions.php");
+
+
+
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -19,7 +27,7 @@
 		<header class="mdl-layout__header">
 	    	<div class="mdl-layout__header-row">
 		    	<a href="index.php">
-	      			<img class="logo" src="images/logo.png" alt="bicycle shop comparison logo" />
+	      			<!-- <img class="logo" src="images/logo.png" alt="bicycle shop comparison logo" /> -->
 	      		</a>
 
 		      	<!-- Add spacer, to align navigation to the right -->

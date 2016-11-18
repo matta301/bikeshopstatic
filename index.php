@@ -30,13 +30,10 @@
 ?>
 <style type="text/css">
 	
-	.location-search {
-		position: absolute;
-		left: 20%;
-	}
-
+	.location-search { position: absolute; left: 20%; }
 	.bicycle-icon { margin-right: 0.5em; }
-	.mdl-list__item { font-size: 14px; line-height: 24px; }
+	.mdl-list__item { font-size: 14px; line-height: 24px; padding: 0 !important; }
+
 </style>
 
 <div class="location-search">		
@@ -53,7 +50,7 @@
 <section class="mdl-grid">
 	
 	<div class="main-banner-container">
-		<img class="" src="images/main-banner.jpg">
+		<!-- <img class="" src="images/main-banner.jpg"> -->
 	</div>
 
 
