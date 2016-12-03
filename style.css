@@ -1,10 +1,82 @@
 
-.logo {
-	width: 70%;
+h1 { font-size: 35px; }
+h2 { font-size: 23px; }
+li.mdl-list__item { padding-bottom: 0; }
+
+/*	Home Page 		*/
+.home-page .logo {	width: 70%; }
+.home-page .main-banner-container { text-align: center; width: 100%; }
+
+
+
+
+
+
+.parallelogram  {
+	display: block;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	float: none;
+	z-index: auto;
+    width: 23.2%;
+    height: 85%;
+	position: absolute;
+	cursor: default;
+	opacity: 1;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	border: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;		
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	background: #4896BA;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	text-shadow: none;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none;
+	-webkit-transform: skewX(-45deg);
+	transform: skewX(-45deg);
+	-webkit-transform-origin: 50% 50% 0;
+	transform-origin: 50% 50% 0;
+    right: 71.6%;
 }
 
 
+/* 
 
+<<<<<<< .mine
+	MEDIA
+
+
+*/
+
+    
+	
+
+@media only screen and (max-width: 1024px) {
+
+	.parallelogram  {		
+	    width: 100%;
+	}
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	.parallelogram {
+	    width: 100%;
+	    right: 77%;
+	}
+
+}||||||| .r3
+.main-banner-container { text-align: center; width: 100%; }=======
 .main-banner-container { text-align: center; width: 100%; }
 
 
@@ -17,3 +89,4 @@
 
 
 
+>>>>>>> .r4

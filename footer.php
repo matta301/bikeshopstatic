@@ -1,63 +1,22 @@
     
 
-				<!-- <footer class="mdl-mega-footer">
-					<div class="mdl-mega-footer__middle-section">
-				
-						<div class="mdl-mega-footer__drop-down-section">
-							<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-							<h1 class="mdl-mega-footer__heading">Features</h1>
-							<ul class="mdl-mega-footer__link-list">
-								<li><a href="#">About</a></li>
-								<li><a href="#">Terms</a></li>
-								<li><a href="#">Partners</a></li>
-								<li><a href="#">Updates</a></li>
-							</ul>
+				<footer class="mdl-mini-footer">
+					<div class="mdl-mini-footer__left-section">
+						<div class="mdl-logo">
+						&copy; <?php echo date('Y'); ?> www.bikeshopcompare.com
 						</div>
-				
-						<div class="mdl-mega-footer__drop-down-section">
-							<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-							<h1 class="mdl-mega-footer__heading">Details</h1>
-							<ul class="mdl-mega-footer__link-list">
-								<li><a href="#">Specs</a></li>
-								<li><a href="#">Tools</a></li>
-								<li><a href="#">Resources</a></li>
-							</ul>
-						</div>
-				
-						<div class="mdl-mega-footer__drop-down-section">
-							<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-							<h1 class="mdl-mega-footer__heading">Technology</h1>
-							<ul class="mdl-mega-footer__link-list">
-								<li><a href="#">How it works</a></li>
-								<li><a href="#">Patterns</a></li>
-								<li><a href="#">Usage</a></li>
-								<li><a href="#">Products</a></li>
-								<li><a href="#">Contracts</a></li>
-							</ul>
-						</div>
-				
-						<div class="mdl-mega-footer__drop-down-section">
-							<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-							<h1 class="mdl-mega-footer__heading">FAQ</h1>
-							<ul class="mdl-mega-footer__link-list">
-								<li><a href="#">Questions</a></li>
-								<li><a href="#">Answers</a></li>
-								<li><a href="#">Contact us</a></li>
-							</ul>
-						</div>
-				
+						<ul class="mdl-mini-footer__link-list">
+							<li><a href="">Home</a></li>
+							<li><a href="">T &amp; C's</a></li>
+							<li><a href="">Privacy Policy</a></li>
+						</ul>
 					</div>
-				
-					<div class="mdl-mega-footer__bottom-section">
-					<div class="mdl-logo">Title</div>
-					<ul class="mdl-mega-footer__link-list">
-					<li><a href="#">Help</a></li>
-					<li><a href="#">Privacy &amps; Terms</a></li>
-					</ul>
+					<div class="mdl-mini-footer__right-section">
+						<button class="mdl-mini-footer__social-btn"></button>
+						<button class="mdl-mini-footer__social-btn"></button>
+						<button class="mdl-mini-footer__social-btn"></button>
 					</div>
-				
-				</footer> -->
-
+				</footer>
 
 			</div>
   		</main>

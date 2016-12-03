@@ -1,3 +1,19 @@
+<<<<<<< .mine
+<?php
+
+	$imageAlt = 'Bikeshopcompare.com';
+
+
+
+
+
+
+
+
+
+?>
+||||||| .r3
+=======
 <?php 
 
 	
@@ -6,10 +22,13 @@
 
 
 ?>
+>>>>>>> .r4
 <!DOCTYPE HTML>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
   	<title><?php echo $pageTitle; ?></title>
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
@@ -20,7 +39,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
-<body class="<?php echo $pageClass; ?>-page">
+<body class="<?php echo $pageClass; ?>">
 
 	<!-- Always shows a header, even in smaller screens. -->
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">

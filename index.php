@@ -1,6 +1,8 @@
 <?php 
+	
 
  	$pageTitle = 'Home |';
+ 	$pageClass = 'home-page';
 	
 	$userLocation = $errMsg = '';
 
@@ -30,13 +32,69 @@
 ?>
 <style type="text/css">
 	
+<<<<<<< .mine
+	.border { border: 1px dotted tomato; }
+||||||| .r3
+	.location-search {
+		position: absolute;
+		left: 20%;
+	}
+=======
 	.location-search { position: absolute; left: 20%; }
 	.bicycle-icon { margin-right: 0.5em; }
 	.mdl-list__item { font-size: 14px; line-height: 24px; padding: 0 !important; }
+>>>>>>> .r4
+
+<<<<<<< .mine
+
+	.location-search { position: absolute; left: 20%; }
+
+	.bicycle-icon { margin-right: 0.5em; }
+	.mdl-list__item { font-size: 14px; line-height: 24px; }
+||||||| .r3
+	.bicycle-icon { margin-right: 0.5em; }
+	.mdl-list__item { font-size: 14px; line-height: 24px; }
+=======
+>>>>>>> .r4
+	.mdl-list { padding: 0; margin-top: 0; }
+
+	.container { float: left; width: 100%; clear: both; }
+	.left-column { float: left; }
+	.right-column { float: right; }
+
+
+	.home-page .mdl-grid { padding-left: 0; padding-right: 0; }
+
+	.main-banner { width: 99%; margin: 0 auto; }
+	.background { background: #fff; position: relative; }
+
+	.tagline  { padding-top: 4em; }
+
+
+	.line-divider { width: 100%; height: 5px; position: relative; z-index: 1; background: #fff; }
+	.line-divider .mdl-button { opacity: 1; position: absolute; left: 0; right: 0; top: -27px; background: #fff; }
+
+	.copy-container-3 { padding-bottom: 4em; }
+
+	/* Search Box 		*/
+	.location-search { position: absolute; left: 23%; border: 1px solid green; top: 10%; }
+	#user-location { background: #fff; padding: 0.5em; }
+
+
+	.wrapper { max-width: 960px; border: 1px dotted firebrick; margin: 0 auto; }
+
+
+
 
 </style>
 
-<div class="location-search">		
+<div class="parallelogram"></div>
+
+
+
+
+
+<!-- <div class="location-search">		
 	<form action="index.php" method="post">
   		<div class="mdl-textfield mdl-js-textfield">
 	    	<input id="user-location" class="mdl-textfield__input" type="text" name="location" id="sample3">
@@ -45,22 +103,49 @@
 	  	<p><?php echo $errMsg; ?></p>	  	
   		<input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" name="form-submit">
 	</form>
+</div> -->
+
+
+<div class="wrapper">
+
+	<!-- Main Banner -->
+	<section class="main-banner border">			
+		<img class="main-banner" src="images/main-banner.jpg" alt="<?php echo $imageAlt; ?>">
+	</section>
+
 </div>
 
+<<<<<<< .mine
+<div class="line-divider mdl-shadow--2dp">
+	<button class="mdl-button mdl-js-button mdl-button--fab">
+  		<i class="material-icons">keyboard_arrow_down</i>
+	</button>
+</div>
+||||||| .r3
+<section class="mdl-grid">
+	
+	<div class="main-banner-container">
+		<img class="" src="images/main-banner.jpg">
+	</div>
+=======
 <section class="mdl-grid">
 	
 	<div class="main-banner-container">
 		<!-- <img class="" src="images/main-banner.jpg"> -->
 	</div>
+>>>>>>> .r4
 
+<div class="background">
 
-	<div class="intro-container mdl-cell--6-col mdl-cell--3-offset" style="border:1px dotted firebrick;">
-		<div class="mdl-grid">
-			<div class="mdl-cell mdl-cell--6-col mdl-cell--middle" style="border:1px dotted blue;">
+	<div class="wrapper">
+
+		<!-- Strap line -->
+		<section class="tagline mdl-grid border">
+			<div class="mdl-cell mdl-cell--6-col mdl-cell--1-offset-tablet mdl-cell--middle" style="border:1px dotted blue;">
 				<h5>Morbi facilisis iaculis accumsan.</h5>
 				<p>Maintaining a healthy, road worthy bike is very important as every cyclist or bike owner should know. It makes your ride that even more enjoyable. Regular servicing and tune ups will keep you riding safely and maximise the life span of your bicycle. Avoiding regular maintenance could turn into expensive and inconvenient repairs.</p>
 			</div>
-			<div class="mdl-cell mdl-cell--6-col" style="border:1px dotted blue;">
+			<div class="mdl-cell mdl-cell--6-col mdl-cell--1-offset-tablet" style="border:1px dotted blue;">
 				<ul class="demo-list-icon mdl-list">
 					<li class="mdl-list__item">
 				    	<span class="mdl-list__item-primary-content">
@@ -71,29 +156,86 @@
 				  	<li class="mdl-list__item">
 					    <span class="mdl-list__item-primary-content">
 						    <i class="bicycle-icon material-icons">directions_bike</i>
-					    	Providing you with information on bike shops that offer repairs and services that is within your budget and area.
+					    	Providing you with information on bike shops that offer repairs and services that are within your budget and area.
 					  	</span>
 				  	</li>
 					<li class="mdl-list__item">
 						<span class="mdl-list__item-primary-content">
 							<i class="bicycle-icon material-icons">directions_bike</i>
-							Bob Odenkirk
+							Bikeshopcompare is 100% free.
 						</span>
 					</li>
 				</ul>
 			</div>
-		</div>
+		</section>
+
+		<!-- Copy container one -->
+		<section class="copy-container-1 mdl-grid border">
+			<div class="container copy-1-container mdl-cell mdl-cell--12-col">
+				<h1>WHAT IS BIKESHOPCOMPARE.COM?</h1>
+				<p>Our bike Shop comparison website combines information on all cycle shops within the UK, allowing you to view and compare the best value for money bike shops within your area.</p>
+				<p>Is your bike in need of a much needed service or repair?</p>
+				<p>Are you looking at booking your bicycle in to a bike shop but have no idea which to choose?</p>
+				<p>Whether you own a road bike, mountain bike, hybrid bike, electric bike, BMX, Tandem or any other kind of bike. There comes a point when components will start to break if they are not maintained properly or wear down though continued use.</p>
+				<p>As we lead extremely busy lives it can be difficult to find the time to carryout repairs and maintenance, or we may just not have the knowledge to be able to.  Therefore when searching for a suitable bike shop that can accommodate our needs, in terms of budget and the type of services they offer, where they are located, it can be quite time consuming.</p>
+			</div>
+		</section>
+
+		<!-- Copy container two -->
+		<section class="copy-container-1 mdl-grid border">
+			<div class="container mdl-cell mdl-cell--12-col">
+				<h2>WHAT BIKE SHOP COMPARE DOES FOR YOU.</h2>
+				<p>That’s where Bike Shop Compare comes in.  We aim to help you with your search and do all of the leg work for you. We provide information and details on bike shops listed across the country, allowing you to save valuable time and money.  Bike Shop Compare provides you with localised searches within your area.  Simply try the search located above.  We provide details on approximate costs of services, directions, opening times and contact information, allowing you to instantly narrow down your search for a suitable bike shop that can accommodate your criteria when deciding to choose one.</p>
+			</div>
+		</section>
+
+		<!-- List/Image Divider Container -->
+		<section class="copy-divider mdl-grid border">
+			<div class="mdl-cell mdl-cell--6-col mdl-cell--1-offset-tablet" style="border:1px dotted blue;">
+				<ul class="demo-list-icon mdl-list">
+					<li class="mdl-list__item">
+				    	<span class="mdl-list__item-primary-content">
+					    	<i class="bicycle-icon material-icons">directions_bike</i>
+					    	Costings
+						</span>
+				  	</li>
+				  	<li class="mdl-list__item">
+					    <span class="mdl-list__item-primary-content">
+						    <i class="bicycle-icon material-icons">directions_bike</i>
+					    	Directions
+					  	</span>
+				  	</li>
+					<li class="mdl-list__item">
+						<span class="mdl-list__item-primary-content">
+							<i class="bicycle-icon material-icons">directions_bike</i>
+							Opening times
+						</span>
+					</li>
+					<li class="mdl-list__item">
+						<span class="mdl-list__item-primary-content">
+							<i class="bicycle-icon material-icons">directions_bike</i>
+							Contact Information
+						</span>
+					</li>
+				</ul>
+			</div>
+			<div class="mdl-cell mdl-cell--6-col mdl-cell--1-offset-tablet" style="border:1px dotted blue;">
+
+			</div>
+		</section>
+
+		<!-- Copy Container three -->
+		<section class="copy-container-3 mdl-grid border">
+			<div class="container mdl-cell mdl-cell--12-col">
+				<h2>WHY DOES BIKE SHOP COMPARE OFFER THESE SERVICES?</h2>
+				<p>We have created a comparison site because we love cycling!  It is something that all of us at Bike Shop Compare are extremely passionate about.  We wanted this site to be a useful tool that would be of interest to everyone who owns a bicycle.</p>
+				<p>One thing that we adhere to is that we will not charge you for the use of this website.   We do not collect fees and aim to be as fully transparent as possible. We want you to have the best possible experience and find the site as a useful tool.</p>			
+			</div>
+		</section>
+
 	</div>
 
-	
-		
-
-</section>
-
-
-
-
-
+</div>
 
 
 
