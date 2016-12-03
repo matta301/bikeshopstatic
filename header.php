@@ -1,20 +1,6 @@
-<<<<<<< .mine
 <?php
 
 	$imageAlt = 'Bikeshopcompare.com';
-
-
-
-
-
-
-
-
-
-?>
-||||||| .r3
-=======
-<?php 
 
 	
 	require_once("functions.php");
@@ -22,7 +8,6 @@
 
 
 ?>
->>>>>>> .r4
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -45,8 +30,8 @@
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 		<header class="mdl-layout__header">
 	    	<div class="mdl-layout__header-row">
-		    	<a href="index.php">
-	      			<!-- <img class="logo" src="images/logo.png" alt="bicycle shop comparison logo" /> -->
+		    	<a class="logo-link" href="index.php">
+	      			<img class="logo" src="images/logo.png" alt="bicycle shop comparison logo" />
 	      		</a>
 
 		      	<!-- Add spacer, to align navigation to the right -->

@@ -1,4 +1,6 @@
-    
+    <div class="line-divider mdl-shadow--2dp">
+	
+</div>
 
 				<footer class="mdl-mini-footer">
 					<div class="mdl-mini-footer__left-section">
@@ -12,9 +14,15 @@
 						</ul>
 					</div>
 					<div class="mdl-mini-footer__right-section">
-						<button class="mdl-mini-footer__social-btn"></button>
-						<button class="mdl-mini-footer__social-btn"></button>
-						<button class="mdl-mini-footer__social-btn"></button>
+						<button class="mdl-mini-footer__social-btn">
+							<img src="images/facebook.png" alt="facebook" />
+						</button>
+						<button class="mdl-mini-footer__social-btn">
+							<img src="images/twitter.png" alt="facebook" />
+						</button>
+						<button class="mdl-mini-footer__social-btn">
+							<img src="images/google.png" alt="facebook" />
+						</button>
 					</div>
 				</footer>
 
@@ -25,7 +33,7 @@
 
 
 	
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmIa_gm6Kr_5wCd_dnBDwvPtnNdHPHDtE&libraries=places"></script>
 	<script type="text/javascript">		
@@ -38,6 +46,16 @@
 		   componentRestrictions: { country: 'gb' }
 		};
 		var autocomplete = new google.maps.places.Autocomplete(input,options);
+
+
+
+		$('#down-btn').click(function (e) {
+			console.log('clicked');
+
+			$("body, html").animate({
+			    scrollTop: $("#scroll-dest").position().top
+			});
+		});
 
 	</script>
 	</body>

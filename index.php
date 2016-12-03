@@ -30,110 +30,34 @@
 	require_once("header.php"); 
 
 ?>
-<style type="text/css">
-	
-<<<<<<< .mine
-	.border { border: 1px dotted tomato; }
-||||||| .r3
-	.location-search {
-		position: absolute;
-		left: 20%;
-	}
-=======
-	.location-search { position: absolute; left: 20%; }
-	.bicycle-icon { margin-right: 0.5em; }
-	.mdl-list__item { font-size: 14px; line-height: 24px; padding: 0 !important; }
->>>>>>> .r4
-
-<<<<<<< .mine
-
-	.location-search { position: absolute; left: 20%; }
-
-	.bicycle-icon { margin-right: 0.5em; }
-	.mdl-list__item { font-size: 14px; line-height: 24px; }
-||||||| .r3
-	.bicycle-icon { margin-right: 0.5em; }
-	.mdl-list__item { font-size: 14px; line-height: 24px; }
-=======
->>>>>>> .r4
-	.mdl-list { padding: 0; margin-top: 0; }
-
-	.container { float: left; width: 100%; clear: both; }
-	.left-column { float: left; }
-	.right-column { float: right; }
-
-
-	.home-page .mdl-grid { padding-left: 0; padding-right: 0; }
-
-	.main-banner { width: 99%; margin: 0 auto; }
-	.background { background: #fff; position: relative; }
-
-	.tagline  { padding-top: 4em; }
-
-
-	.line-divider { width: 100%; height: 5px; position: relative; z-index: 1; background: #fff; }
-	.line-divider .mdl-button { opacity: 1; position: absolute; left: 0; right: 0; top: -27px; background: #fff; }
-
-	.copy-container-3 { padding-bottom: 4em; }
-
-	/* Search Box 		*/
-	.location-search { position: absolute; left: 23%; border: 1px solid green; top: 10%; }
-	#user-location { background: #fff; padding: 0.5em; }
-
-
-	.wrapper { max-width: 960px; border: 1px dotted firebrick; margin: 0 auto; }
-
-
-
-
-</style>
-
 <div class="parallelogram"></div>
 
 
-
-
-
-<!-- <div class="location-search">		
+<div class="location-search">		
 	<form action="index.php" method="post">
   		<div class="mdl-textfield mdl-js-textfield">
+  			<span>Search</span>
 	    	<input id="user-location" class="mdl-textfield__input" type="text" name="location" id="sample3">
     	 	<label class="mdl-textfield__label" for="sample1"></label>
 	  	</div>
 	  	<p><?php echo $errMsg; ?></p>	  	
   		<input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" name="form-submit">
 	</form>
-</div> -->
+</div>
 
 
 <div class="wrapper">
-
 	<!-- Main Banner -->
-	<section class="main-banner border">			
+	<section class="main-banner border">
 		<img class="main-banner" src="images/main-banner.jpg" alt="<?php echo $imageAlt; ?>">
 	</section>
-
 </div>
 
-<<<<<<< .mine
 <div class="line-divider mdl-shadow--2dp">
-	<button class="mdl-button mdl-js-button mdl-button--fab">
+	<button id="down-btn" class="mdl-button mdl-js-button mdl-button--fab">
   		<i class="material-icons">keyboard_arrow_down</i>
 	</button>
 </div>
-||||||| .r3
-<section class="mdl-grid">
-	
-	<div class="main-banner-container">
-		<img class="" src="images/main-banner.jpg">
-	</div>
-=======
-<section class="mdl-grid">
-	
-	<div class="main-banner-container">
-		<!-- <img class="" src="images/main-banner.jpg"> -->
-	</div>
->>>>>>> .r4
 
 <div class="background">
 
@@ -170,7 +94,7 @@
 		</section>
 
 		<!-- Copy container one -->
-		<section class="copy-container-1 mdl-grid border">
+		<section id="scroll-dest" class="copy-container-1 mdl-grid border">
 			<div class="container copy-1-container mdl-cell mdl-cell--12-col">
 				<h1>WHAT IS BIKESHOPCOMPARE.COM?</h1>
 				<p>Our bike Shop comparison website combines information on all cycle shops within the UK, allowing you to view and compare the best value for money bike shops within your area.</p>
