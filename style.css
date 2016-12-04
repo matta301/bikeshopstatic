@@ -2,6 +2,7 @@
 h1 { font-size: 35px; }
 h2 { font-size: 23px; }
 li.mdl-list__item { padding-bottom: 0; }
+section { background: #fff; }
 
 /*	Navigation 		*/
 .mdl-layout__header-row .mdl-navigation__link { color: #000; text-transform: uppercase; font-weight: bold; }
@@ -41,7 +42,8 @@ li.mdl-list__item { padding-bottom: 0; }
 .background { background: #fff; background-image: url('images/background-6.jpg'); background-size: 100% 100%; position: relative; }
 .home-page .mdl-grid { padding-left: 0; padding-right: 0; }
 .home-page .container { float: left; width: 100%; clear: both; padding-left: 2em; padding-right: 2em; }
-.home-page .tagline .mdl-cell { padding-left: 2em; padding-right: 2em; }
+.home-page .tagline .mdl-cell,
+.home-page .copy-divider .mdl-cell { padding-left: 2em; padding-right: 2em; }
 
 
 .tagline  { padding-top: 4em; }
@@ -60,7 +62,8 @@ li.mdl-list__item { padding-bottom: 0; }
 	
 
 @media only screen and (max-width: 1024px) {
-
+	
+	.location-search { left: 3%; }
 	.parallelogram  {		
 	    width: 100%;
 	}
@@ -72,7 +75,7 @@ li.mdl-list__item { padding-bottom: 0; }
 	.home-page .mdl-grid { padding: 8px; }
 	.logo-link { text-align: center; }
 	.main-banner { width: 100%; }
-	.location-search { left: 3%; }
+	
 	.parallelogram { width: 100%; right: 77%; }
 }
 

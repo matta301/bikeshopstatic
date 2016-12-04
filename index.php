@@ -49,7 +49,7 @@
 <div class="wrapper">
 	<!-- Main Banner -->
 	<section class="main-banner border">
-		<img class="main-banner" src="images/main-banner.jpg" alt="<?php echo $imageAlt; ?>">
+		<img class="main-banner" src="images/main-banner-2.jpg" alt="<?php echo $imageAlt; ?>">
 	</section>
 </div>
 
