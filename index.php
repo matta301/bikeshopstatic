@@ -149,7 +149,7 @@
 		</section>
 
 		<!-- Copy Container three -->
-		<section class="copy-container-3 mdl-grid border">
+		<section class="last-copy-container mdl-grid border">
 			<div class="container mdl-cell mdl-cell--12-col">
 				<h2>WHY DOES BIKE SHOP COMPARE OFFER THESE SERVICES?</h2>
 				<p>We have created a comparison site because we love cycling!  It is something that all of us at Bike Shop Compare are extremely passionate about.  We wanted this site to be a useful tool that would be of interest to everyone who owns a bicycle.</p>
