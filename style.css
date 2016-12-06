@@ -9,7 +9,7 @@ blockquote:before { display: block; content: "\201C";  font-size: 80px; position
 blockquote, blockquote p { line-height: 1.6; color: #8a8a8a; font-size: 1.1em; }
 blockquote cite { color: #999999; font-size: 14px; display: block; margin-top: 5px; }
 blockquote:after { display: none; }
-
+.center-align { text-align: center; }
 
 
 /*	Navigation 		*/
@@ -54,7 +54,8 @@ blockquote:after { display: none; }
 .home-page .copy-divider .mdl-cell { padding-left: 2em; padding-right: 2em; }
 
 
-.tagline  { padding-top: 4em; }
+.tagline,
+.top-container  { padding-top: 4em; }
 .line-divider { width: 100%; height: 5px; position: relative; z-index: 1; background: #fff; }
 .line-divider .mdl-button { opacity: 1; position: absolute; left: 0; right: 0; top: -27px; background: #fff; }
 .last-copy-container { padding-bottom: 4em; }
@@ -83,9 +84,21 @@ blockquote:after { display: none; }
 #mc_embed_signup label { font-weight: bold; }
 #mc_embed_signup #mce-success-response { font-size: 12px; width: 100%; }
 #mc_embed_signup input.subscribe-button { border: none; margin: 0 auto; }
-
 .contact-form,
-.contact-form-outer { padding: 0; margin: 0; width: 100%; }
+.contact-form-outer { padding-left: 0; padding-right: 0; padding-bottom: 0;  margin: 0; width: 100%; }
+.contact-form-outer label { color: #fff; }
+
+.contact-form-outer .mdl-textfield__input { border-bottom: 1px solid #fff; color: #fff; }
+
+.contact-form-outer form { padding: 4em 0;}
+.contact-submit { background-color: #E8E8E8; position: relative; left: 17%; }
+.contact-form-outer .mdl-textfield__label,
+.contact-form-outer .mdl-textfield__input { width: 100%; }
+.follow-us { padding-top: 4em; }
+.follow-us hr { width: 65%; margin: 0 auto; }
+.follow-us p { color: #fff; }
+.follow-us button { margin: 0.5em 2em; }
+
 
 @media only screen and (max-width: 1024px) {
 	

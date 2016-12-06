@@ -95,7 +95,7 @@
 
 		<!-- Copy container one -->
 		<section id="scroll-dest" class="copy-container-1 mdl-grid border">
-			<div class="container copy-1-container mdl-cell mdl-cell--12-col">
+			<div class="container top-container copy-1-container mdl-cell mdl-cell--12-col">
 				<h1>WHAT IS BIKESHOPCOMPARE.COM?</h1>
 				<p>Our bike Shop comparison website combines information on all cycle shops within the UK, allowing you to view and compare the best value for money bike shops within your area.</p>
 				<p>Is your bike in need of a much needed service or repair?</p>

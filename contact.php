@@ -68,21 +68,62 @@
 	</div>
 
 	<div class="wrapper">
-		<section class="contact-form-outer mdl-grid">
-			<div class="container contact-form mdl-cell mdl-cell--12-col ">
-				<p>Subscribe To Newsletter</p>
+		<section class="contact-form-outer mdl-grid  top-container">
+			<div class="container contact-form mdl-cell mdl-cell--12-col ">				
 				<form>
 					<div class="mdl-grid">
-						<div class="mdl-cell mdl-cell--6-col">
+						<div class="center-align mdl-cell mdl-cell--6-col">
 							<div class="mdl-textfield mdl-js-textfield">
 								<input class="mdl-textfield__input" type="text" id="name">
 								<label class="mdl-textfield__label" for="name">Name</label>
 							</div>
 						</div>
-						<div class="mdl-cell mdl-cell--6-col">
+						<div class="center-align mdl-cell mdl-cell--6-col">
 							<div class="mdl-textfield mdl-js-textfield">
 								<input class="mdl-textfield__input" type="text" id="name">
-								<label class="mdl-textfield__label" for="name">Name</label>
+								<label class="mdl-textfield__label" for="name">Email</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="mdl-grid">
+						<div class="center-align mdl-cell mdl-cell--6-col">
+							<div class="mdl-textfield mdl-js-textfield">
+								<input class="mdl-textfield__input" type="text" id="company">
+								<label class="mdl-textfield__label" for="company">Company</label>
+							</div>
+						</div>
+						<div class="center-align mdl-cell mdl-cell--6-col">
+							<div class="mdl-textfield mdl-js-textfield">
+								<input class="mdl-textfield__input" type="text" id="phone">
+								<label class="mdl-textfield__label" for="phone">Phone</label>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="mdl-grid">
+						<div class="center-align mdl-cell mdl-cell--6-col">
+							<div class="mdl-textfield mdl-js-textfield">
+								<textarea class="mdl-textfield__input" type="text" rows= "10" id="message" ></textarea>
+								<label class="mdl-textfield__label" for="message">Your Message</label>
+							</div>
+						</div>
+						<div class="mdl-cell mdl-cell--6-col">
+							<input type="submit" name="contact-submit" class="contact-submit mdl-button mdl-js-button mdl-button--raised">
+							<div class="follow-us center-align">
+								<p>Follow us on</p>
+								<hr>
+								<button class="mdl-mini-footer__social-btn">
+									<a href=""><img src="images/facebook.png" alt="facebook" /></a>
+								</button>
+								<button class="mdl-mini-footer__social-btn">
+									<a href=""><img src="images/twitter.png" alt="facebook" /></a>
+								</button>
+								<button class="mdl-mini-footer__social-btn">
+									<a href=""><img src="images/google.png" alt="facebook" /></a>
+								</button>
+								
 							</div>
 						</div>
 					</div>
