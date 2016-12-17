@@ -34,16 +34,13 @@
 
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	
-	
-
 	<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmIa_gm6Kr_5wCd_dnBDwvPtnNdHPHDtE&libraries=places"></script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmIa_gm6Kr_5wCd_dnBDwvPtnNdHPHDtE&libraries=places"></script>-->
 	
 	<script type="text/javascript">
 
-		$(document).foundation();
-
+		
+/*
 		// Google autocomplete
 		var input = document.getElementById('user-location');
 
@@ -53,16 +50,9 @@
 		};
 		var autocomplete = new google.maps.places.Autocomplete(input,options);
 
+*/
 
-
-		$('#down-btn').click(function (e) {
-			console.log('clicked');
-
-			$("body, html").animate({
-			    scrollTop: $("#scroll-dest").position().top
-			});
-		});
-
+		
 	</script>
 	</body>
 </html>

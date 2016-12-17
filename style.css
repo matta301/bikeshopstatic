@@ -1,4 +1,5 @@
 
+body { font-family: 'Roboto', sans-serif; }
 h1 { font-size: 35px; }
 h2 { font-size: 23px; }
 li.mdl-list__item { padding-bottom: 0; }
@@ -10,6 +11,7 @@ blockquote, blockquote p { line-height: 1.6; color: #8a8a8a; font-size: 1.1em; }
 blockquote cite { color: #999999; font-size: 14px; display: block; margin-top: 5px; }
 blockquote:after { display: none; }
 .center-align { text-align: center; }
+
 
 
 /*	Navigation 		*/
@@ -70,7 +72,16 @@ blockquote:after { display: none; }
 
 	
 
-
+/* Results Page */	
+.align-right { text-align: right; }
+.align-left { text-align: left; }
+.mdl-data-table th { color: #fff; text-align: center !important; background: #0089BD; }
+.table, tr, th{ border: 2px solid #fff; font-family: 'Roboto', sans-serif; text-transform: uppercase; }
+.mdl-data-table td { text-align: center; }
+.mdl-data-table td.basic-price { font-weight: bold; font-size: 18px; }
+.mdl-data-table td.shop-name { font-weight: bold; font-size: 14px; }
+.mdl-data-table td p.workshop-result { font-size: 14px; text-transform: capitalize; font-style: italic; line-height: 185%; margin-bottom: 0; }
+.mdl-data-table td p.workshop-result span { font-weight: bold; font-style: normal; }
 
 
 
@@ -100,12 +111,17 @@ blockquote:after { display: none; }
 .follow-us button { margin: 0.5em 2em; }
 
 
+
+.show-large { display: block; }
+
+
+
 @media only screen and (max-width: 1024px) {
 	
 	.location-search { left: 3%; }
-	.parallelogram  {		
-	    width: 100%;
-	}
+	.parallelogram  { width: 100%; }
+
+	.show-large { display: none; }
 
 }
 
