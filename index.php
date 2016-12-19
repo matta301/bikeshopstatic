@@ -28,6 +28,7 @@
 	}
 
 	require_once("header.php"); 
+	
 
 ?>
 <div class="parallelogram"></div>
@@ -160,26 +161,5 @@
 	</div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <?php require_once("footer.php"); ?>

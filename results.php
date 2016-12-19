@@ -45,7 +45,7 @@
 	
 	<!-- Right Advert -->
 	<div class="align-left mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet">		
-		<img src="images/placeholder.png" alt="">		
+		<img class="show-large" src="images/placeholder.png" alt="">		
 	</div>
 
 </div>	
