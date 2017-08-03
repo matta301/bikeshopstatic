@@ -2,7 +2,7 @@
 
 function spreadsheetData($sessionLocation) {
 
-	echo "<p style='color: red;'>User input " . $sessionLocation . "<p>";
+	//echo "<p style='color: red;'>User input: " . $sessionLocation . "<p>";
 
 
 	// Spreadsheet where all shop details are stored
@@ -26,46 +26,53 @@ function spreadsheetData($sessionLocation) {
 				$fullService     = $data["gsx\$fullservice"]["\$t"];
 
 				echo "<pre>" . var_dump($city) ." </pre>";
+				
 
 				//echo '<pre>' . print_r($basicService, true) . '</pre>';
 				//exit();
 				
-				// Checks user input location against the data held in the spreadsheet.  
+				// Checks user input location against the data held in the spreadsheet.  ;
 				// If the string that the user input matches against any address data in 
 				// the JSON then returns the relevant results.
-				if (strpos($sessionLocation, $city) === true || strpos($sessionLocation, $county) === true || strpos($sessionLocation, $postCode) === true ) {
+
+				if (! empty($sessionLocation)) {				
+
+
+
+					if (strpos($city, $sessionLocation) !== FALSE || strpos($county, $sessionLocation) !== FALSE || strpos($postCode, $sessionLocation) !== FALSE ) {
 
 
 
 
-					$output  = 	'<tr>';
-					$output .=		'<td class="shop-name">' . $shopName . '</td>';					
-					if (strlen($basicService) > 0) { 
-					
-						$output .=	'<td class="basic-price">' . $basicService . '</td>'; 
+						$output  = 	'<tr>';
+						$output .=		'<td class="shop-name">' . $shopName . '</td>';					
+						if (strlen($basicService) > 0) { 
+						
+							$output .=	'<td class="basic-price">' . $basicService . '</td>'; 
 
-					}else { 
+						}else { 
 
-						$output .= '<td class="basic-price"> - </td>'; 
+							$output .= '<td class="basic-price"> - </td>'; 
 
+						}
+						
+						$output .=		'<td>';
+						if (strlen($basicService) > 0) { $output .=	'<p class="workshop-result">Basic Service:  <span>' . $basicService . '</span></p>'; }else { $output .= '<p class="workshop-result">Basic Service:  <span> - </span></p>'; }
+						if (strlen($standardService) > 0) { $output .=	'<p class="workshop-result">General Service:  <span>' . $standardService . '</span></p>'; }else { $output .= '<p class="workshop-result">General Service:  <span> - </span></p>'; }
+						if (strlen($fullService) > 0) { $output .=	'<p class="workshop-result">Full Service:  <span>' . $fullService . '</span></p>'; }else { $output .= '<p class="workshop-result">Full Service:  <span> - </span></p>'; }
+						$output .=		'</td>';
+						$output .= 		'<td>';
+						$output .= 			'<a href="shop-profile.php?address=' . $postCode . '&shopname=' . $shopName . '">';
+						$output .=				'<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">BUY NOW</button>';
+						$output .=			'</a>';
+	                    $output .=  	'</td>';
+						$output .= 	'</tr>';
+
+						echo $output;
+
+					}else {
+						echo "no results ";
 					}
-					
-					$output .=		'<td>';
-					if (strlen($basicService) > 0) { $output .=	'<p class="workshop-result">Basic Service:  <span>' . $basicService . '</span></p>'; }else { $output .= '<p class="workshop-result">Basic Service:  <span> - </span></p>'; }
-					if (strlen($standardService) > 0) { $output .=	'<p class="workshop-result">General Service:  <span>' . $standardService . '</span></p>'; }else { $output .= '<p class="workshop-result">General Service:  <span> - </span></p>'; }
-					if (strlen($fullService) > 0) { $output .=	'<p class="workshop-result">Full Service:  <span>' . $fullService . '</span></p>'; }else { $output .= '<p class="workshop-result">Full Service:  <span> - </span></p>'; }
-					$output .=		'</td>';
-					$output .= 		'<td>';
-					$output .= 			'<a href="shop-profile.php?address=' . $postCode . '&shopname=' . $shopName . '">';
-					$output .=				'<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">BUY NOW</button>';
-					$output .=			'</a>';
-                    $output .=  	'</td>';
-					$output .= 	'</tr>';
-
-					echo $output;
-					
-				}else {
-					echo "no results ";
 				}
 			}
 		}
