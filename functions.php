@@ -35,11 +35,11 @@ function spreadsheetData($sessionLocation) {
 				// If the string that the user input matches against any address data in 
 				// the JSON then returns the relevant results.
 
-				if (! empty($sessionLocation)) {				
+				if (! empty($sessionLocation)) {
 
+					//strrpos(haystack, needle)
 
-
-					if (strpos($city, $sessionLocation) !== FALSE || strpos($county, $sessionLocation) !== FALSE || strpos($postCode, $sessionLocation) !== FALSE ) {
+					if (strstr($sessionLocation, $city) !== FALSE || strstr($county, $sessionLocation) !== FALSE || strstr($postCode, $sessionLocation) !== FALSE ) {
 
 
 
