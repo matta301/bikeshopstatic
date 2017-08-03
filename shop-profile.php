@@ -1,4 +1,11 @@
-<?php require_once("header.php"); ?>
+<?php 
+
+ 	$pageClass = 'shop-profile';
+ 	$pageTitle = 'shop profile';
+
+	require_once("header.php"); 
+
+?>
 
 
 

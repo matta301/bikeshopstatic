@@ -1,11 +1,7 @@
 <?php
 
-	$imageAlt = 'Bikeshopcompare.com';
-
-	
+	$imageAlt = 'Bikeshopcompare.com';	
 	require_once("functions.php");
-
-
 
 ?>
 <!DOCTYPE HTML>

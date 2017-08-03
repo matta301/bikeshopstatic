@@ -25,7 +25,7 @@ function spreadsheetData($sessionLocation) {
 				$standardService = $data["gsx\$standardservice"]["\$t"];
 				$fullService     = $data["gsx\$fullservice"]["\$t"];
 
-				echo "<pre>" . var_dump($city) ." </pre>";
+				//echo "<pre>" . var_dump($city) ." </pre>";
 				
 
 				//echo '<pre>' . print_r($basicService, true) . '</pre>';
@@ -37,12 +37,7 @@ function spreadsheetData($sessionLocation) {
 
 				if (! empty($sessionLocation)) {
 
-					//strrpos(haystack, needle)
-
 					if (strstr($sessionLocation, $city) !== FALSE || strstr($county, $sessionLocation) !== FALSE || strstr($postCode, $sessionLocation) !== FALSE ) {
-
-
-
 
 						$output  = 	'<tr>';
 						$output .=		'<td class="shop-name">' . $shopName . '</td>';					
@@ -50,10 +45,9 @@ function spreadsheetData($sessionLocation) {
 						
 							$output .=	'<td class="basic-price">' . $basicService . '</td>'; 
 
-						}else { 
+						}else {
 
-							$output .= '<td class="basic-price"> - </td>'; 
-
+							$output .= '<td class="basic-price"> - </td>';
 						}
 						
 						$output .=		'<td>';
@@ -71,7 +65,7 @@ function spreadsheetData($sessionLocation) {
 						echo $output;
 
 					}else {
-						echo "no results ";
+						// /echo "no results ";
 					}
 				}
 			}

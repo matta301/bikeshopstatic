@@ -59,8 +59,11 @@
 		});
 
 
+		// 	URL + parameters to return results of places. Locaiton will be user input 
+		//	https://maps.googleapis.com/maps/api/place/textsearch/json?query=bicycle&location=50.7367027,-3.5171708999999964&radius=500&key=AIzaSyAmIa_gm6Kr_5wCd_dnBDwvPtnNdHPHDtE
 
-		
+		// rankby=distance parameter
+		//https://maps.googleapis.com/maps/api/place/textsearch/json?query=bicycle&location=50.7367027,-3.5171708999999964&rankby=distance&key=AIzaSyAmIa_gm6Kr_5wCd_dnBDwvPtnNdHPHDtE
 
 
 
