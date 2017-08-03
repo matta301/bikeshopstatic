@@ -49,7 +49,7 @@
 			var urlSegment = segment_array.pop();
 			console.log(urlSegment);
 
-			if (urlSegment == 'index.php') {
+			if (urlSegment == 'index.php' || ) {
 				
 				// Runs Google Maps Autocomplete
 				autoComplete();

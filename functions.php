@@ -2,6 +2,9 @@
 
 function spreadsheetData($sessionLocation) {
 
+	echo "<p style='color: red;'>User input " . $sessionLocation . "<p>";
+
+
 	// Spreadsheet where all shop details are stored
 	$url  	= file_get_contents("https://spreadsheets.google.com/feeds/list/1DgePfAxco-xVy2VdrfxkyPs3W1R5ZL5B-7zKgVf8DzI/od6/public/values?alt=json");
 	$json 	= json_decode($url, true);
@@ -22,6 +25,7 @@ function spreadsheetData($sessionLocation) {
 				$standardService = $data["gsx\$standardservice"]["\$t"];
 				$fullService     = $data["gsx\$fullservice"]["\$t"];
 
+				echo "<pre>" . var_dump($city) ." </pre>";
 
 				//echo '<pre>' . print_r($basicService, true) . '</pre>';
 				//exit();
@@ -29,7 +33,10 @@ function spreadsheetData($sessionLocation) {
 				// Checks user input location against the data held in the spreadsheet.  
 				// If the string that the user input matches against any address data in 
 				// the JSON then returns the relevant results.
-				if (strpos($sessionLocation, $city) !== false || strpos($sessionLocation, $county) !== false || strpos($sessionLocation, $postCode) !== false ) {
+				if (strpos($sessionLocation, $city) === true || strpos($sessionLocation, $county) === true || strpos($sessionLocation, $postCode) === true ) {
+
+
+
 
 					$output  = 	'<tr>';
 					$output .=		'<td class="shop-name">' . $shopName . '</td>';					
@@ -57,6 +64,8 @@ function spreadsheetData($sessionLocation) {
 
 					echo $output;
 					
+				}else {
+					echo "no results ";
 				}
 			}
 		}
